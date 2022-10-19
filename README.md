@@ -1,4 +1,4 @@
-INSERT MANDATORY GIF
+THERE WILL BE NO GIFS IN MY HOUSE
 
 # Project Title
 
@@ -10,7 +10,7 @@ Add the installation instructions.
 
 # Code Review
 
-Code review written by [Jane Doh](https://github.com/username).
+Code review written by [Dan Fogelberg](https://github.com/DanFogelberg).
 
 1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
 2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
@@ -22,5 +22,5 @@ Code review written by [Jane Doh](https://github.com/username).
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Dan Fogelberg
+2. Hampus Selldén
