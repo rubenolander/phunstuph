@@ -1,0 +1,17 @@
+html,body {
+    color:#1D1D1B;
+    margin: 0;
+}
+.rallyHero {
+    height: 25rem;
+background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/BovEzjo.jpeg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+text-align: center;
+color: #fff;
+}
+.featuredDriver {
+    background-color: #DFB18F;
+    width: 20rem;
+}
