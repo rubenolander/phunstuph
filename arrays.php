@@ -77,3 +77,24 @@ $wrcDrivers = [
         'team' => $teamMsport,
     ],
 ];
+
+$wrcTeams = [
+    [
+        'standing' => 1,
+        'name' => $teamToyota,
+        'team_points' => 503,
+        'logo' => 'https://www.wrc.com/fileadmin/images/manufactors/toyota.png',
+    ],
+    [
+        'standing' => 2,
+        'name' => $teamHyundai,
+        'team_points' => 410,
+        'logo' => 'https://www.wrc.com/fileadmin/images/manufactors/hyundai.png'
+    ],
+    [
+        'standing' => 3,
+        'name' => $teamMsport,
+        'team_points' => 238,
+        'logo' => 'https://www.wrc.com/fileadmin/images/manufactors/ford.png',
+    ]
+];
