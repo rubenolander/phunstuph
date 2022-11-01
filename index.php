@@ -1,8 +1,7 @@
 <?php
 //Declare types and require in the related files.
 declare(strict_types=1);
-require __DIR__ . '/header.php'; // What's said below.
-require __DIR__ . '/footer.php'; // this isn't needed since I've only got one page though. Well well.
+require __DIR__ . '/header.php';
 require __DIR__ . '/arrays.php';
 require __DIR__ . '/functions.php';
 //Shuffle the driver array so that you get a new featured driver each time the page loads.
@@ -14,7 +13,7 @@ shuffle($wrcDrivers);
         <a href="">Link to here to be placed in the corner</a>
         <h1> Some starter WRC 2022 stats</h1>
         <h2> Hi and welcome to Here, where I've decided to share some facts and statistics about the current standings and dealings in the 2022 edition of the World Rally Championship. Rally is neat, and so are you.</h2>
-        <h3> This page is pretty much hardcoded before the final event of 3022, Rally Japan, and will most likely not be updatet post final event. Not that it matters; Kalle Rovanperä has already won the championship.</h2>
+        <h3> This page is pretty much hardcoded before the final event of 2022, Rally Japan, and will most likely not be updated after the final event. Not that it matters; Kalle Rovanperä has already won the championship.</h2>
     </header>
     <main>
         <section class="featuredDriver">
@@ -36,33 +35,36 @@ shuffle($wrcDrivers);
                 ?>
             </article>
         </section>
-        <!-- Date to next rally, and a countdown timer (echo date - todays date?) -->
+        <!-- Date to next rally, and a countdown timer. -->
         <section class="nextEvent">
             <h3> NEXT EVENT </h3>
             <h4> WRC FORUM8 Rally Japan </h4>
-            <p> Starting on the 10th of November and ending on the 13th of November. </p>
-            <?php
-            // Call on function that calculates time left until rally japan.
-            // echo $japanDate = strtotime("November 10, 2022");
-            //Hmm maybe I'll just do this with javascript. 
-            function timeUntilRally()
-            {
-                $japanDate = strtotime("November 10, 2022");
-                $remainingTime = $japanDate - time();
-                return floor($remainingTime) / floor(60) / 60 / 24;
-            }
-            echo $japanDate = strtotime("November 10, 2022");
-            ?>
+            <p> Starting on November 10th and ending on the November 13th. </p>
+            <p>
+                <?php
+                // Call on function that calculates time left until rally japan.
+                echo timeUntilRally();
+
+
+                ?>
+            </p>
+            <small>
+                <?php
+                echo "(You updated this page on " . date('F dS') . " at " . date('G:i:s') . ".)";
+                ?>
+            </small>
+
         </section>
         <section class="teamsStanding">
             <h3> MANUFACTURER STANDINGS </h3>
             <h4> as of 12 out of 13 events driven</h4>
             <article>
-                <?php
-                foreach ($wrcTeams as $wrcTeam) {
-                    echo nl2br(" $wrcTeam[standing]. $wrcTeam[name], current score = $wrcTeam[team_points]\n");
-                };
-                ?>
+                <p>
+                    <?php foreach ($wrcTeams as $wrcTeam) : ?>
+                        <img src="<?php echo $wrcTeam['logo'] ?>" alt="picture of car manufacturer logo>" />
+                        <?php echo nl2br(" $wrcTeam[standing]. $wrcTeam[name], current score = $wrcTeam[team_points]\n") ?>
+                    <?php endforeach ?>
+                </p>
             </article>
         </section>
         <!-- Hard coded comment section with option to add one username + one comment. -->
@@ -70,4 +72,6 @@ shuffle($wrcDrivers);
             <form action="" method="post"></form>
         </section>
     </main>
-    <!-- https://www.wrc.com/fileadmin/images/manufactors/ford.png -->
+    <?php
+    require __DIR__ . '/footer.php';
+    ?>

@@ -77,7 +77,7 @@ $wrcDrivers = [
         'team' => $teamMsport,
     ],
 ];
-
+// <!-- https://www.wrc.com/fileadmin/images/manufactors/ford.png -->
 $wrcTeams = [
     [
         'standing' => 1,
