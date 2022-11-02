@@ -1,8 +1,13 @@
 THERE WILL BE NO GIFS IN MY HOUSE
 
-# Project Title
+# Ruben's WRC 2022 / phunstuph
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+This minor page has been used a place for me to ~~create some art~~ practice PHP and programming think in general. It's existence is thanks to school work but I will look at it as a stepping stone to my future life with imposter syndrome. 
+
+"This was the first project I did, connected to web development. Sweet jeebus. But look how far I've come today!"
+
+You can find the deployed page by following the link below.
+http://www.ruebn.se/phunstuph/
 
 # Installation
 
@@ -22,5 +27,5 @@ Code review written by [Dan Fogelberg](https://github.com/DanFogelberg).
 
 Tested by the following people:
 
-1. Dan Fogelberg
-2. Hampus Selldén
+1. 
+2. 
