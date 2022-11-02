@@ -31,13 +31,11 @@ http://www.ruebn.se/phunstuph/
 
 Code review written by [Dan Fogelberg](https://github.com/DanFogelberg).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-3. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-4. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-5. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-
-
+1. index.php:30, 43 - These comments are redundant. We can already see that the following lines are functions, and assume that they are located in functions.php. 
+2. functions.php:28-34 - This is not a function. Having code execute in functions.php makes the flow of the code very hard to follow. So these lines should either be made into a function that is called elsewhere or moved to a different file. 
+3. functions.php:28-34 - The user submitted data in POST should be validated or filtered before being used.
+4. index.php:4-6, 87 - Every require should use the same syntax. The require on line 87 uses __DIR__ while the others do not. 
+5. functions.php:36-48 - This function doesn’t need to use print_r. Since you are echoing specific values in arrays echo works fine. You could also clean this up and make it more readable by concatenating or just putting the variables into strings rather than making multiple calls to echo/prin_r.
 
 # Testers
 
