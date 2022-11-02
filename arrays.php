@@ -1,10 +1,10 @@
 <?php
 
-declare(strict_types=1);
 $teamToyota = "Toyota Gazoo Racing World Rally Team";
 $teamHyundai = "Hyundai Shell Mobis World Rally Team";
 $teamMsport = "M-Sport Ford World Rally Team";
 
+// This belongs to <section> 1
 $wrcDrivers = [
     [
         'name' => 'Kalle Rovanperä',
@@ -77,7 +77,8 @@ $wrcDrivers = [
         'team' => $teamMsport,
     ],
 ];
-// <!-- https://www.wrc.com/fileadmin/images/manufactors/ford.png -->
+
+// This belongs to <section> 3
 $wrcTeams = [
     [
         'standing' => 1,
@@ -96,5 +97,17 @@ $wrcTeams = [
         'name' => $teamMsport,
         'team_points' => 238,
         'logo' => 'https://www.wrc.com/fileadmin/images/manufactors/ford.png',
+    ]
+];
+
+//This belongs to <section> 4
+$guestBookComments = [
+    [
+        'name' => 'Promenatio Dilongo',
+        'comment' => 'Please delete this.'
+    ],
+    [
+        'name' => 'O. Solberg',
+        'comment' => 'Why am I not listed among the featured drivers?!'
     ]
 ];

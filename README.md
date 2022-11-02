@@ -4,7 +4,7 @@ THERE WILL BE NO GIFS IN MY HOUSE
 
 This minor page has been used a place for me to ~~create some art~~ practice PHP and programming think in general. It's existence is thanks to school work but I will look at it as a stepping stone to my future life with imposter syndrome. 
 
-"This was the first project I did, connected to web development. Sweet jebus. But look how far I've come today!"
+"This was the first project I did, connected to web development. Sweet jeebus. But look how far I've come today!"
 
 You can find the deployed page by following the link below.
 http://www.ruebn.se/phunstuph/
