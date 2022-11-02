@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 $teamToyota = "Toyota Gazoo Racing World Rally Team";
 $teamHyundai = "Hyundai Shell Mobis World Rally Team";
 $teamMsport = "M-Sport Ford World Rally Team";
