@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Connect the related files.
 require 'header.php';
 require 'arrays.php';
@@ -66,7 +67,7 @@ shuffle($wrcDrivers);
         <aside class="commentSection">
             <h3>Guest book!</h3>
             <small>(sorry, your comment won't be saved when you refresh)</small>
-            <form action="/" method="post">
+            <form method="post">
                 <input type="text" name="name" placeholder="Enter your name:">
                 <textarea name="comment" placeholder="Enter your comment:"></textarea>
                 <button type="submit">Add comment</button>
