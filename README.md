@@ -51,4 +51,4 @@ Code review written by [Dan Fogelberg](https://github.com/DanFogelberg).
 Tested by the following people:
 
 1. Dan Fogelberg
-2. Johanna Pihl
+2. Anna Brumark
