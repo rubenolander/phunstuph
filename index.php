@@ -19,7 +19,7 @@ if (isset($_POST['name'], $_POST['comment'])) {
 
 <body>
     <header class="rallyHero">
-        <a href="http://www.ruebn.se/phunstuph/">Return here.</a>
+        <a href="http://www.ruebn.se/phunstuph/">Home</a>
         <h1> Ruben's minor foray into WRC 2022</h1>
         <h2> Hi and welcome! 'Tis a place where I'm sharing some statistics about the current standings in the 2022 edition of the World Rally Championship.</h2>
         <h3 class="headerH3"> The data output here is valid as of pre Rally Japan.</h2>

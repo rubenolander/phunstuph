@@ -2,8 +2,6 @@
     font-family: 'Kanit';
 }
 
-/* breakpoint 1520px width */
-
 html,body {
     background-color: rgb(137, 131, 131);
     color:#1D1D1B;
@@ -16,11 +14,18 @@ p {
     line-height: 1.5;
   }
 .wrcBar {
-    background-color: rgb(91, 91, 91);
-    width: 100%;
+    background-color: rgb(99, 93, 93);
+    width: auto;
     height: 4rem;
     text-align: center;
 }
+a {
+    text-decoration: none;
+}
+a:visited { 
+    text-decoration: none;
+    color:rgb(123, 171, 211); 
+   }
 .rallyHero {
     height: 27rem;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/BovEzjo.jpeg");
@@ -28,7 +33,9 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-
+}
+.headerH3 {
+    text-align: left;
 }
 .manufacturerLogo {
     margin-left: 1rem;
@@ -64,10 +71,26 @@ footer {
 }
 
 form {
-    width:50%;
+    width:35%;
     display: flex;
     flex-direction: column;
 }
+form textarea{
+    height: 4rem;
+}
 .bookGuests {
     margin-top: 2rem;
+}
+@media screen and (max-width: 650px) {
+	.manufacturerStandings {
+        height: 28rem;
+    }
+    .nextEvent {
+        height: 24rem;
+    }
+    form textarea
+    {
+        height: 6rem;
+    }
+
 }
