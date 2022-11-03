@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-//This belongs to <section> 2.
 function timeUntilRally()
 {
     $rallyJapanStart = strtotime("November 10, 2022 10:00");
