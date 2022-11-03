@@ -105,7 +105,7 @@ $wrcTeams = [
 $guestBookComments = [
     [
         'name' => 'Promenatio Dilongo',
-        'comment' => 'Please delete this.'
+        'comment' => 'Please delete this from the internet.'
     ],
     [
         'name' => 'O. Solberg',

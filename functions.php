@@ -24,25 +24,11 @@ function timeUntilRally()
     }
 }
 
-
-//This belongs to <section> 4.
-if (isset($_POST['name'], $_POST['comment'])) {
-    $guestBookComments[] = [
-        'name' => $_POST['name'],
-        'comment' => $_POST['comment'],
-    ];
-}
-
 function echoDriver($wrcDrivers)
 {
-    echo "Name: ";
-    print_r($wrcDrivers[0]['name']);
-    echo nl2br("\nPoints in WRC 2022: ");
-    print_r($wrcDrivers[0]['season_points']);
-    echo nl2br("\nCo-Driver: ");
-    print_r($wrcDrivers[0]['co_driver']);
-    echo nl2br("\nWRC 2022 event wins: ");
-    print_r($wrcDrivers[0]['event_wins_2022']);
-    echo nl2br("\nTeam: ");
-    print_r($wrcDrivers[0]['team']);
+    echo nl2br('Name: ' .  $wrcDrivers[0]['name'] . "\n"
+        . 'Points in WRC 2022: ' . $wrcDrivers[0]['season_points'] . "\n"
+        . 'Co-Driver: ' . $wrcDrivers[0]['co_driver'] . "\n"
+        . 'WRC 2022 event wins: ' . $wrcDrivers[0]['event_wins_2022'] . "\n"
+        . 'Team: ' . $wrcDrivers[0]['team']);
 }

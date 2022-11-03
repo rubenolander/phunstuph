@@ -32,10 +32,19 @@ http://www.ruebn.se/phunstuph/
 Code review written by [Dan Fogelberg](https://github.com/DanFogelberg).
 
 1. index.php:30, 43 - These comments are redundant. We can already see that the following lines are functions, and assume that they are located in functions.php. 
+        ***Response:*** Noted, removed the comments in question.
+
 2. functions.php:28-34 - This is not a function. Having code execute in functions.php makes the flow of the code very hard to follow. So these lines should either be made into a function that is called elsewhere or moved to a different file. 
+        ***Response:*** Yeah fair enough. Moved the code block to the top of index.php instead. 
+
 3. functions.php:28-34 - The user submitted data in POST should be validated or filtered before being used.
+        ***Response:*** Added code for this in the block mentioned above.
+
 4. index.php:4-6, 87 - Every require should use the same syntax. The require on line 87 uses __DIR__ while the others do not. 
+        ***Response:*** Overlooked. Now fixed, cheers!
+
 5. functions.php:36-48 - This function doesn’t need to use print_r. Since you are echoing specific values in arrays echo works fine. You could also clean this up and make it more readable by concatenating or just putting the variables into strings rather than making multiple calls to echo/prin_r.
+        ***Response:*** Must've messed it up the first couple of tries. Got it working your way now. Again, cheers! 
 
 # Testers
 

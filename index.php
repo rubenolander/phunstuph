@@ -6,6 +6,15 @@ require 'arrays.php';
 require 'functions.php';
 //Shuffle the driver array so that you get a new featured driver each time the page loads.
 shuffle($wrcDrivers);
+
+if (isset($_POST['name'], $_POST['comment'])) {
+    $guestBookName = htmlspecialchars($_POST['name']);
+    $guestBookComment = htmlspecialchars($_POST['comment']);
+    $guestBookComments[] = [
+        'name' => $guestBookName,
+        'comment' => $guestBookComment,
+    ];
+}
 ?>
 
 <body>
@@ -27,7 +36,6 @@ shuffle($wrcDrivers);
                 <p>
                     <?php
                     //Echo out each item from the array containing drivers.
-                    //Cleaned the code up a bit by putting it all in a function.
                     echoDriver($wrcDrivers);
                     ?>
                 </p>
@@ -40,7 +48,6 @@ shuffle($wrcDrivers);
             <p> Starting on November 10th and ending on November 13th. </p>
             <p>
                 <?php
-                // Call on function that calculates time left until rally japan. Found in /functions.php
                 echo timeUntilRally();
                 ?>
             </p>
@@ -66,7 +73,7 @@ shuffle($wrcDrivers);
         <!-- Hard coded comment section with option to add one username + one comment. -->
         <aside class="commentSection">
             <h3>Guest book!</h3>
-            <small>(sorry, your comment won't be saved when you refresh)</small>
+            <small>(sorry, your comment won't be saved when you leave)</small>
             <form method="post">
                 <input type="text" name="name" placeholder="Enter your name:">
                 <textarea name="comment" placeholder="Enter your comment:"></textarea>
@@ -82,7 +89,6 @@ shuffle($wrcDrivers);
             </article>
         </aside>
     </main>
-    <!-- Add footer -->
     <?php
-    require __DIR__ . '/footer.php';
+    require 'footer.php';
     ?>
